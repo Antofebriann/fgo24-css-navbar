@@ -1,9 +1,8 @@
 body{
   margin: 0;
-  background-color: crimson;
+  background-color: lightcyan;
 }
 .paraf{
-  color: white;
   font-size: 20px;
   text-align: center;
   padding: 20px;
@@ -17,69 +16,130 @@ body{
       font-size: 18px;
       background-color: darksalmon;
       padding: 10px;
-    }
-    .nav-links{
-      color: white;
-      flex-direction: column;
-      gap: 10px;
-      background-color: darksalmon;
-      padding: 10px;
-      display: block; 
-    }
-    .nav-links a {
-      display: block; 
-      margin: 5px 0; 
-      color: white;
-      text-decoration: none;
-    }
   }
-@media (min-width: 768px){
   .paraf {
-    color: black;
+    color: wheat;
     font-size: 16px;
-    background-color: lightblue;
+    background-color: crimson;
     padding: 10px;
     margin: 10px;
   }
+  nav {  
+    background-color: darkblue;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    color: black;
+    padding: 10px 20px;
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+  }
   .nav-links {
-    display: block; 
-    background-color: cornsilk;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    background-color: darkblue;
     padding: 10px;
   }
-
+  
   .nav-links a {
-    display: inline-block; 
-    margin-right: 20px; 
-    color: black;
+    text-align: center; 
+    color: wheat;
     text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: deeppink;
+  }
+  .nav-links a:active {
+    color: red;
+  }
+  .nav-links a:focus {
+    color: yellow;
+  } 
+  .paraf:hover {
+    transform: scale(1.05);
+  }
+  .paraf:active {
+    transform: scale(0.95);
+  }
+  .paraf:focus {
+    transform: scale(1.1);
+  }
+  .paraf:focus-within {
+    transform: scale(1.1);
+  }
+  .paraf:focus-visible {
+    transform: scale(1.1);
   }
 }
-nav {  
-  background-color: cornsilk;
-  color: black;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s;
-}
-.nav-links {
-  overflow: hidden;
-  background-color: cornsilk;
-  padding: 10px;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links a {
-  float: left; 
-  margin-right: 20px;
-  color: black;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover {
-  color: deeppink;
+@media (min-width: 768px){
+  .paraf {
+    color: darkred;
+    font-size: 16px;
+    background-color: lightskyblue;
+    padding: 10px;
+    margin: 10px;
+  }
+  nav {  
+    background-color: darkblue;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    color: black;
+    padding: 10px 20px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+  }
+  .nav-links {
+    overflow: hidden;
+    background-color: darkblue;;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    float: left; 
+    margin-right: 20px;
+    color: wheat;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: deeppink;
+  }
+  .nav-links a:active {
+    color: red;
+  }
+  .nav-links a:focus {
+    color: yellow;
+  } 
+  .paraf:hover {
+    transform: scale(1.05);
+  }
+  .paraf:active {
+    transform: scale(0.95);
+  }
+  .paraf:focus {
+    transform: scale(1.1);
+  }
+  .paraf:focus-within {
+    transform: scale(1.1);
+  }
+  .paraf:focus-visible {
+    transform: scale(1.1);
+  }
+   
 }
